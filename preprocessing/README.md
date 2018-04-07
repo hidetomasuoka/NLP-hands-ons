@@ -13,31 +13,9 @@ $ cd /webdb100/02
 Wikipediaからデータをダウンロードし、WikiExtractor を実行します。
 
 ```shell
-$ ./get_wikipedia.sh
-```
-
-## `mecab.py`
-
-Python から MeCab を実行します。
-
-```shell
-$ python mecab.py
-```
-
-## `cabocha.py`
-
-Python から CaboCha を実行します。
-
-```shell
-$ python cabocha.py
-```
-
-## `content_word.py`
-
-内容語を出力します。
-
-```shell
-$ python content_word.py
+$ curl -SL -o jawiki-latest-pages-articles.xml.bz2 https://dumps.wikimedia.org/jawiki/latest/jawiki-latest-pages-articles.xml.bz2
+$ git clone https://github.com/attardi/wikiextractor
+$ python3.6 wikiextractor/WikiExtractor.py -b 100G -o ./wikipedia_data/extracted ./wikipedia_data/jawiki-latest-pages-articles.xml.bz2
 ```
 
 ## `wikipedia_normalize.py`
