@@ -1,11 +1,10 @@
-
 # 第2章「自然言語処理」サンプルコード
 
 ## 準備
 
 Dockerコンテナを起動し、このディレクトリに移動します。
 
-```
+``` shell
 $ cd /webdb100/02
 ```
 
@@ -13,7 +12,7 @@ $ cd /webdb100/02
 
 Wikipediaからデータをダウンロードし、WikiExtractor を実行します。
 
-```
+```shell
 $ ./get_wikipedia.sh
 ```
 
@@ -21,7 +20,7 @@ $ ./get_wikipedia.sh
 
 Python から MeCab を実行します。
 
-```
+```shell
 $ python mecab.py
 ```
 
@@ -29,7 +28,7 @@ $ python mecab.py
 
 Python から CaboCha を実行します。
 
-```
+```shell
 $ python cabocha.py
 ```
 
@@ -37,7 +36,7 @@ $ python cabocha.py
 
 内容語を出力します。
 
-```
+```shell
 $ python content_word.py
 ```
 
@@ -45,7 +44,7 @@ $ python content_word.py
 
 Wikipedia のデータを正規化します。
 
-```
+```shell
 $ python wikipedia_normalize.py
 ```
 
@@ -53,7 +52,7 @@ $ python wikipedia_normalize.py
 
 Wikipedia のデータを分かち書きします。
 
-```
+```shell
 $ python wikipedia_wakachi.py
 ```
 
